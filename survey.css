@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: black;
+    /* background-size: cover; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    display: block;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(120deg, rgb(120 18 18 / 50%), rgb(58 56 160 / 50%)), url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boxes {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
+.field-style {
+    /* display: inline; */
+    width: 100%;
+    border-radius: 0.3em;
+    height: 2.4rem;
+    padding: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+#survey-form {
+    /* border: 2px solid rgb(252, 10, 10); */
+    /* margin: 27px 28px 12px 0px; */
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    max-width: 653px;
+    margin: auto;
+    padding: 10px;
+    background-color: #0000005c;
+    border-radius: 0.3em;
+    ;
+}
+
+.label-style {
+    display: block;
+}
+
+.boxes {
+    color: white;
+    /* font-weight: bold; */
+    padding: 0.5rem;
+    /* border: 4px solid black; */
+    /* min-width: 590px; */
+    width: 90%;
+}
+
+#description {
+    text-align: center;
+}
+
+.radio-style {
+    display: block;
+    font-size: larger;
+    color: #a5d2f9;
+    font-family: monospace;
+}
+
+#submit {
+    border-radius: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+#submit:hover {
+    background-color: green;
+}
+
+.checkbox-style {
+    display: block;
+}
+
+#text-area {
+    /* margin: 0px; */
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 184px;
+    min-height: 90px;
+}
+
+@media (max-width:739px) {
+    #survey-form {
+        max-width: 550px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">
+            THIS IS A SAMPLE SURVEY FORM.
+        </h1>
+        <p id="description">This is a sample SURVEY FORM this does not send any details to any server.</p>
+    </header>
+    <div id="content">
+        <form action="" id="survey-form">
+            <div class="boxes">
+                <label for="name" class="label-style">
+                    Name</label>
+                <input type="text" name="survey-detail" id="name" placeholder="Enter Name" required class="field-style">
+            </div>
+            <div class="boxes">
+                <label for="email" class="label-style">
+                    Email</label>
+                <input type="email" name="survey-detail" id="email" placeholder="Enter Email" required class="field-style">
+            </div>
+            <div class="boxes">
+                <label for="Age" class="label-style">
+                    Age</label>
+                <input type="number" name="survey-detail" id="number" placeholder="Enter Age" class="field-style" min="18" max="100">
+            </div>
+
+            <div class="boxes">
+                <label for="dropdown" class="label-style">
+                    Sport you are interested for-</label>
+                <select name="dropdown" id="dropdown" class="field-style">
+                    <option value="Cricket">Cricket</option>
+                    <option value="BasketBall">BasketBall</option>
+                    <option value="VolleyBall">VolleyBall</option>
+                    <option value="Tennis">Tennis</option>
+                </select>
+            </div>
+            <div class="boxes">
+                <label for="">YOUR CURRENT MOOD?</label>
+                <label class="radio-style">
+                    <input type="radio" name="radio-set" id="happy" value="happy" checked>
+                    Happy
+                </label>
+                <label class="radio-style">
+                    <input type="radio" name="radio-set" id="neutral" value="neutral">
+                    Neutral
+                </label>
+                <label class="radio-style">
+                    <input type="radio" name="radio-set" id="sad" value="sad">
+                    Sad
+                </label>
+            </div>
+            <div class="boxes">
+                <p> Lorem ipsum dolor, sit amet</p>
+                <label for="check1" class="checkbox-style">
+                    <input type="checkbox" name="functions" id="check1" value="item1" checked>
+                    item1
+                </label>
+                <label for="check2" class="checkbox-style">
+                    <input type="checkbox" name="functions" id="check2" value="item2">
+                    item2
+                </label>
+                <label for="check3" class="checkbox-style">
+                    <input type="checkbox" name="functions" id="check3" value="item3">
+                    item3
+                </label>
+                <label for="check4" class="checkbox-style">
+                    <input type="checkbox" name="functions" id="check4" value="item4">
+                    item4
+                </label>
+            </div>
+            <div class="boxes">
+
+                <p> Write About Yourself!</p>
+                <textarea name="describe" id="text-area" cols="40" rows="10" placeholder="Start Writing Here"></textarea>
+            </div>
+            <div class="boxes">
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
